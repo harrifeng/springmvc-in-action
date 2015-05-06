@@ -42,8 +42,10 @@ buildscript {
     }
 }
 
+def projectName = 'springapp'
+
 tomcat {
-    httpPort = 8088
+    httpPort = 8080
 }
 
 // webapp/WEB-INF/web.xml is ONLY default web.xml location for war plugin
@@ -52,8 +54,10 @@ tomcat {
 
 tomcatRun {
     webDefaultXml = file("${project.webAppDir}/WEB-INF/web.xml")
+    contextPath = projectName
 }
 
 tomcatRunWar {
     webDefaultXml = file("${project.webAppDir}/WEB-INF/web.xml")
+    contextPath = projectName
 }
