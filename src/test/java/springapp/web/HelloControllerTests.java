@@ -1,13 +1,8 @@
 package springapp.web;
 
-
 import org.junit.Test;
 import org.springframework.web.servlet.ModelAndView;
-
-import springapp.web.HelloController;
-
 import static org.junit.Assert.*;
-
 
 public class HelloControllerTests {
 
