@@ -4,7 +4,7 @@ import org.junit.Test;
 import org.springframework.web.servlet.ModelAndView;
 import static org.junit.Assert.*;
 
-public class HelloControllerTests {
+public class HelloControllerTest {
 
     @Test
     public void testHandleRequestView() throws Exception{
